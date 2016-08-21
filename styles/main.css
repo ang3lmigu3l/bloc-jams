@@ -14,29 +14,18 @@ body {
     padding: 0.5rem;
     background-color: rgb(101,18,95);
 }
-<<<<<<< HEAD
 
-=======
-¨¨
->>>>>>> 299964f9fc1feaa7e923243d1aff85933d5f073f
 .navbar > .logo {
     position: relative;
     left: 2rem;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 299964f9fc1feaa7e923243d1aff85933d5f073f
 
 *, *::before, *::after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
-<<<<<<< HEAD
 
 .container { 
  margin: 0 auto;
@@ -63,18 +52,4 @@ body {
     
 }
 
-=======
-.container { 
- margin: 0 auto;
-    max-width: 64rem;
-}
 
-@media (min-width: 640px) {
-    html {font-size: 112%;}
-}
-
-@media (min-width: 1024px) {
-    html{font-size:120%;}
-    
-}
->>>>>>> 299964f9fc1feaa7e923243d1aff85933d5f073f
