@@ -30,6 +30,21 @@
      ]
  };
 
+var albumNumberThree = {
+    title: 'Title Example',
+    artist: 'Artist Example',
+    label: 'Label Example',
+    year: ' 2016',
+    albumArtUrl: 'assets/images/album_covers/20.png',
+     songs: [
+         { title: 'Hello, Operator?', duration: '1:01' },
+         { title: 'Ring, ring, ring', duration: '5:01' },
+         { title: 'Fits in your pocket', duration: '3:21'},
+         { title: 'Can you hear me now?', duration: '3:14' },
+         { title: 'Wrong phone number', duration: '2:15'}
+     ]
+};
+
 
  var createSongRow = function(songNumber, songName, songLength) {
      var template =
@@ -42,8 +57,10 @@
  
      return template;
  };
-
-
+//array of all albums 
+var albums = [albumPicasso, albumMarconi, albumNumberThree];
+    
+    
  var setCurrentAlbum = function(album) {
      // #1
      var albumTitle = document.getElementsByClassName('album-view-title')[0];
@@ -66,7 +83,23 @@
          albumSongList.innerHTML += createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
      }
  };
+
+
  
  window.onload = function() {
      setCurrentAlbum(albumPicasso);
+     var albumImage = document.getElementsByClassName('album-cover-art')[0];
+     var index = 0;
+     
+     albumImage.addEventListener("click", function(event){
+         setCurrentAlbum(albums[index]);
+         index++;
+         
+         if (index === albums.length) {
+             index = 0;
+         }
+     })
+     
+     
  };
+
