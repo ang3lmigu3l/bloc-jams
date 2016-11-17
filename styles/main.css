@@ -9,7 +9,6 @@ body {
     min-height: 100%;
 }
 
-
 .navbar {
     position: relative;
     padding: 0.5rem;
@@ -54,7 +53,6 @@ body {
      color: rgb(233,50,117);
  }
 
-
 *, *::before, *::after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -82,7 +80,8 @@ body {
     .column.half{width:50%;}
     .column.third {width: 33.3%;}
     .column.fourth{width:25%;}
-    .column.flow-opposite{float:right;}
+    .column.flow-opposite{float:right;
+}
 
 
 @media (min-width: 1024px) {
